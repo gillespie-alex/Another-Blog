@@ -11,11 +11,11 @@
     text-align: left;
 }
 
-.post-author {
+/* .post-author {
     text-align: left;
     font-style: italic;
-    margin-bottom: 20px;
-}
+    margin-bottom: 10px;
+} */
 
 .post-content {
     text-align: justify;
@@ -33,3 +33,19 @@
     font-size: 21px; /* Adjust font size as needed */
     color: #777
 }
+
+/* Puts the Author and the Date on the same line, but author left aligned and date right aligned */
+.author-date-container {
+    display: flex;
+    justify-content: space-between; /* This spreads out the children to either end */
+    align-items: center; /* This vertically centers the items if their sizes differ */
+
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.author, .date {
+    margin: 0; /* Removes default margin from <p> tags */
+    padding: 0; /* Adjust padding as necessary */
+}
+
