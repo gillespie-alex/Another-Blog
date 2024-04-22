@@ -1,15 +1,4 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <title>{{ post.title }}</title>
-</head>
-<body>
-    <h1>{{ post.title }}</h1>
-    <h1>{{ post.author }}</h1>
-    <p>{{ post.content }}</p>
-    <a href="/">Back</a>
-</body>
-</html> -->
+<!-- post.html -->
 
 {% extends 'base.html' %}
 
@@ -20,7 +9,7 @@
     <h2 class="post-title">{{ post.title }}</h2>
     <div class="author-date-container">
         <p class="author">{{ post.author }}</p>
-        <p class="date">April 21, 2024</p>
+        <p class="date">{{ post.date }}</p>
     </div>
     <div class="post-content" style="white-space: pre-wrap;">
         {{ post.content }}
