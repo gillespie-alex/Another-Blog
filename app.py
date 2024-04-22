@@ -17,11 +17,6 @@ def index():
     return render_template('index.html', posts=posts)
 
 
-@app.route('/entry2/')
-def entry2():
-    return render_template('entry2.html')
-
-
 @app.route('/archives/')
 def archives():
     posts = BlogPost.query.all()

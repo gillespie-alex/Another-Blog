@@ -34,9 +34,10 @@
 /* Ensure the h1 inside the header doesn't have default margins that push your layout around */
 .site-header h1 {
     margin: 0;
-    font-size: 21px; /* Adjust font size as needed */
-    color: #777
+    font-size: 24px; /* Adjust font size as needed */
+    color: #333
 }
+
 
 .form-group {
     display: flex;
