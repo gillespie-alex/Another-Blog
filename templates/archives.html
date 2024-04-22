@@ -1,0 +1,22 @@
+<!doctype html>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='archives.css') }}">
+<script>src="{{ url_for('static', filename='archives.js') }}"</script>
+<title>Archives</title>
+<body>
+  <header class="site-header">
+    <h1>Archives</h1>
+  </header>
+  <div class="archives-container">
+    <ul class="archives-list">
+        {% for post in posts %}
+            <li><a href="{{ url_for('post', post_id=post.id) }}">{{ post.title }}</a></li>
+        {% endfor %}
+      <!-- <li><a href="#">Entry 1</a></li>
+      <li><a href="{{ url_for('entry2') }}">Entry 2</a></li>
+      <li><a href="#">Entry 3</a></li> -->
+      <li><a href="{{ url_for('new_entry') }}">Add Entry</a></li>
+    </ul>
+  </div>
+
+</body>

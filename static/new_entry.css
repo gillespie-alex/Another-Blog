@@ -1,0 +1,60 @@
+.new-entry {
+    text-align: center;
+    max-width: 800px; /* Adjust based on your preference */
+    padding: 20px;
+    /* border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc; */
+
+    position: relative;
+    margin: 0 auto; /* This centers the form container */
+    transform: translateX(-7%);
+
+}
+
+.post-title {
+    text-align: left;
+}
+
+.post-author {
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.post-content {
+    text-align: justify;
+}
+
+.site-header {
+    text-align: left;
+    padding: 10px; /* Adjust padding as needed */
+    border-bottom: 1px solid #ccc; /* Solid black border */
+}
+
+/* Ensure the h1 inside the header doesn't have default margins that push your layout around */
+.site-header h1 {
+    margin: 0;
+    font-size: 21px; /* Adjust font size as needed */
+    color: #777
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    max-width: 500px; /* Adjust based on your preference */
+    margin: auto;
+    padding: 20px;
+}
+.form-group label {
+    width: 100px; /* Adjust label width as needed */
+    margin-right: 10px;
+    text-align: right;
+}
+.form-group input, .form-group textarea {
+    flex: 1; /* Ensures input/textarea elements take up remaining space */
+}
+textarea {
+    resize: vertical; /* Allows vertical resizing */
+    height: 500px;
+}

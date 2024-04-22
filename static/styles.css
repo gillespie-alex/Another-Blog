@@ -1,0 +1,65 @@
+/* styles.css */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.content {
+    text-align: right;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.description {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.sidebar {
+    border-left: 1px solid #ccc;
+    padding-left: 15px;
+    margin-left: 18px;
+}
+
+.entry-list {
+    list-style-type: none;
+    padding: 0;
+    height: 210px;
+    overflow-y: auto;
+}
+
+.entry-list li {
+    margin-bottom: 10px;
+}
+
+.entry-list li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.entry-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Hide scrollbar */
+.entry-list::-webkit-scrollbar {
+    width: 0;   /* Remove scrollbard width */
+}
+
+.archives-link {
+    text-align: left;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.archives-link a {
+    color: #333;
+    font-size: 1.1em;
+}

@@ -1,0 +1,35 @@
+.blog-post {
+    text-align: center;
+    max-width: 800px; /* Adjust based on your preference */
+    margin: auto;
+    padding: 20px;
+    /* border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc; */
+}
+
+.post-title {
+    text-align: left;
+}
+
+.post-author {
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.post-content {
+    text-align: justify;
+}
+
+.site-header {
+    text-align: left;
+    padding: 10px; /* Adjust padding as needed */
+    border-bottom: 1px solid #ccc; /* Solid black border */
+}
+
+/* Ensure the h1 inside the header doesn't have default margins that push your layout around */
+.site-header h1 {
+    margin: 0;
+    font-size: 21px; /* Adjust font size as needed */
+    color: #777
+}

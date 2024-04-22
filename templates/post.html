@@ -1,0 +1,27 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.title }}</title>
+</head>
+<body>
+    <h1>{{ post.title }}</h1>
+    <h1>{{ post.author }}</h1>
+    <p>{{ post.content }}</p>
+    <a href="/">Back</a>
+</body>
+</html> -->
+
+{% extends 'base.html' %}
+
+  <h1>{% block title %} {{ post.title }} {% endblock %}</h1>
+
+{% block content %}
+  <div class="blog-post">
+    <h2 class="post-title">{{ post.title }}</h2>
+    <p class="post-author">{{ post.author }}</p>
+    <div class="post-content" style="white-space: pre-wrap;">
+        {{ post.content }}
+    </div>
+    <a href="/">Back</a>
+</div>
+{% endblock %}

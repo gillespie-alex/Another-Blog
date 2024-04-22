@@ -1,0 +1,1 @@
+blog_writers = ['A', 'L', 'J']
