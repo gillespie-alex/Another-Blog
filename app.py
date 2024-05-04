@@ -50,14 +50,21 @@ def new_entry():
     return render_template('new_entry.html')
 
 
+# At the beginning of every session there it will delete whatever's in dictionary
 def delete_posts():
     posts = BlogPost.query.all()
-    for post in posts:
-        print(post.title)
-        # if "natalist" or "n/a" in post.title:
-        #     print("yes we found the one")
-        #     db.session.delete(post)
-        #     db.session.commit()
+    with open('delete_posts.txt', 'r') as file:
+        lines = file.readlines()
+
+    posts_to_delete = []
+    for line in lines:
+        for post in posts:
+            if line.strip() == post.title:
+                print("Found an entry in delete_posts")
+                
+                # Delete the entry
+                db.session.delete(post)
+                db.session.commit()
 
 
 if __name__ == "__main__":
